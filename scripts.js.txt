@@ -1,0 +1,46 @@
+// JavaScript code for Inductiv3D.com
+
+// Add a "sticky" header
+window.onscroll = function() {stickyHeader()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+// Show and hide mobile navigation menu
+function toggleMenu() {
+  var nav = document.getElementById("nav");
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+  } else {
+    nav.style.display = "block";
+  }
+}
+
+// Open modal window
+function openModal() {
+  var modal = document.getElementById("modal");
+  modal.style.display = "block";
+}
+
+// Close modal window
+function closeModal() {
+  var modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+// Submit form data
+function submitForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  
+  // Add code to submit form data here
+}
